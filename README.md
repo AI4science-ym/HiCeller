@@ -9,7 +9,9 @@ The latest advancements in single-cell technology have brought unprecedented opp
 </p>
 
 
-## Dataset of Celler-75
+## Dataset
+
+### Celler-75
 
 In our deep exploration of this field, we have not only gathered but also constructed a large-scale private dataset, Celler-75, which boasts an unparalleled data volume of 40 million annotated cells, covering 80 human tissues and 75 specific diseases. The scale, depth, and breadth of this dataset far surpass any publicly available dataset currently in existence.
 
@@ -19,6 +21,9 @@ In our deep exploration of this field, we have not only gathered but also constr
 
 
 We have currently released the test and training sets for [**seven tissues**](https://pan.quark.cn/s/dd520f55c876?pwd=D9hk), including **lung, skin, kidney, brain, liver, cortex, and breast**, covering the four tissues and related experiments mentioned in the paper. In the future, we will update with more species and tissues. **Our dataset is strictly prohibited for any commercial use outside of academic purposes.** Violations will be pursued legally.
+### MS & hPancreas
+
+The  [**Multiple Sclerosis**](https://pan.quark.cn/s/471174cc07e3) (MS) dataset  and the  [**hPancreas**](https://pan.quark.cn/s/24a3c11553b0) dataset are publicly available resources specifically tailored for investigating particular human diseases.
 
 
 ## Reproduce
