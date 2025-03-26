@@ -45,7 +45,7 @@ After that, you need to modify the model path and dataset path in `test.py`. You
 ## Experiment
 
 Our project introducing Gaussian Inflation Loss (GInf Loss) and a secondary training phase with hard sample mining, achieving higher accuracy in cell annotation compared to scBERT, scGPT, CellPLM, and other methods.
-The Gaussian Loss GInf function can be found in the file located at /hicell/loss.py. This function is specifically designed to calculate the Gaussian-based loss, which is a critical component in optimizing the model's performance.
+The Gaussian Loss GInf function can be found in the file located at `/hicell/loss.py`. This function is specifically designed to calculate the Gaussian-based loss, which is a critical component in optimizing the model's performance.
 <p align="center">
 <img src="https://github.com/YaoGina/HiCeller/blob/main/78900cf3df77ef27edf507dd0a29b50.png" width="1100" align="center">
 </p>
