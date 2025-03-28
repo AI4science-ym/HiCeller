@@ -54,8 +54,11 @@ The Gaussian Loss GInf function can be found in the file located at `/hicell/los
 <img src="https://github.com/YaoGina/HiCeller/blob/main/78900cf3df77ef27edf507dd0a29b50.png" width="1100" align="center">
 </p>
 
-The model weights we used in our experiments correspond to different tissues, such as the  [**brain**](https://pan.quark.cn/s/33e4eccaed23) and [**kidney**](https://pan.quark.cn/s/0ba774da43c5). You can download the weights for the respective tissues by clicking on the corresponding link.you
+The model weights we used in our experiments correspond to different tissues, such as the  [**brain**](https://pan.quark.cn/s/33e4eccaed23) and [**kidney**](https://pan.quark.cn/s/0ba774da43c5). You can download the weights for the respective tissues by clicking on the corresponding link.
 
+<p align="center">
+<img src="(https://github.com/YaoGina/HiCeller/blob/main/confusion_matrix-27382b412910.png)" width="1100" align="center">
+</p>
 ## Citing this work
 
 If you use the code, please cite:
