@@ -110,4 +110,6 @@ If you use the code, please cite:
 }
 
 ```
+## Contact us
 
+If you have any questions regarding our work, you can contact us at yimingliu@hnu.edu.cn, but please note this is only for research purposes.
