@@ -42,6 +42,10 @@ conda env create -f environment.yml
 
 After that, you need to modify the model path and dataset path in `test.py`. You can obtain our checkpoint model and data **here**. Finally, run `python test.py` to use **HiCell**.
 
+```
+python test.py --data_path /*******.h5ad --model_path /*******.pt
+```
+
 ## Experiment
 
 Our project introducing Gaussian Inflation Loss (GInf Loss) and a secondary training phase with hard sample mining, achieving higher accuracy in cell annotation compared to scBERT, scGPT, CellPLM, and other methods.
