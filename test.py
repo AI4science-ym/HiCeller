@@ -66,10 +66,9 @@ os.environ["KMP_WARNINGS"] = "off"
 warnings.filterwarnings('ignore')
 parser = argparse.ArgumentParser()
 parser.add_argument('--data_path',
-                    default='/gpfstest/tako/singlecell/dataset/zeng2/synecosys_datasets/dataset_process_batch_1_2/HD221101007_fig_1b_cat.h5ad',
-                    help='输入数据集路径')
-parser.add_argument('--model_path', default='/tako/scGPT/save/dev_scGPT-Mar20-09-41', help='模型路径')
-# parser.add_argument('--data_path2', default='/gpfstest/tako/hxf/scGPT/peplung2.h5ad', help='输入数据集路径')
+                    default='/gpfstest/tako/singlecell/dataset/zeng2/synecosys_datasets/dataset_process_batch_1_2/HD221101007_fig_1b_cat.h5ad')
+parser.add_argument('--model_path', default='/tako/scGPT/save/dev_scGPT-Mar20-09-41')
+# parser.add_argument('--data_path2', default='/gpfstest/tako/hxf/scGPT/peplung2.h5ad')
 args = parser.parse_args()
 hyperparameter_defaults = dict(
     seed=0,
@@ -204,27 +203,7 @@ import hicell
 logger = hicell.logger
 hc.utils.add_file_handler(logger, save_dir / "run.log")
 
-"""
-两个数据集分开
-"""
 
-# adata_test2 = sc.read(args.data_path2)
-# adata_test2.obs["celltype"] = adata_test2.obs["annot_sub2"].astype("category")
-# data_is_raw = False
-# filter_gene_by_counts = False
-# adata_test_raw = adata_test2.copy()
-# celltype_series = adata_test2.obs["annot_sub2"].astype("category")
-# current_categories = celltype_series.cat.categories.tolist()
-# # 添加自定义类别 'buqueding cells'
-# if 'buqueding cells' not in current_categories:
-#     current_categories.append('buqueding cells')
-# # 更新类别（不使用 inplace）
-# adata_test2.obs["celltype"] = celltype_series.cat.set_categories(current_categories)
-# celltype_id_labels = adata_test2.obs["celltype"].astype("category").cat.codes.values
-# celltypes = adata_test2.obs["celltype"].unique()
-# num_types = len(np.unique(celltype_id_labels))
-# id2type = dict(enumerate(adata_test2.obs["celltype"].astype("category").cat.categories))
-# adata_test2.obs["celltype_id"] = celltype_id_labels
 cell_type_key = "annot_sub"
 adata_test = sc.read(args.data_path)
 clusters_to_remove = ['Doublet', 'Low quality']
